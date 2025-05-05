@@ -1,13 +1,27 @@
 package com.aluracursos.screenmatch.modelos;
 
-public class Titulo {
-    private String nombre;
 
+
+
+public class Titulo {
+
+
+
+    private String nombre;
     private int fechaDeLanzamiento;
     private int duracionEnMinutos;
     private boolean incluidoEnElPlan;
     private double sumaDeLasEvaluaciones ;
     private int totalDeLasEvaluaciones;
+
+    //CONSTRUCTORES
+
+    public Titulo(String nombre, int fechaDeLanzamiento) {
+        this.nombre = nombre;
+        this.fechaDeLanzamiento = fechaDeLanzamiento;
+    }
+
+
 
     //setters
 
@@ -49,7 +63,7 @@ public class Titulo {
         return incluidoEnElPlan;
     }
 
-//*************metodos
+//**metodos
 
     public void muestraFichaTecnica (){
         System.out.println("\nEl nombre de la pelicula es: " + nombre );
