@@ -5,6 +5,8 @@ import com.aluracursos.screenmatch.modelos.Serie;
 import com.aluracursos.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
+
 
 public class PrincipalConListas {
     public static void main(String[] args) {
@@ -16,8 +18,6 @@ public class PrincipalConListas {
         otraPelicula.evalua(5);
         var peliculaDeBruno = new Pelicula("El señor de los anillos",2001);
         peliculaDeBruno.evalua(10);
-
-
 
 
         ArrayList<Titulo> lista = new ArrayList<>();
@@ -33,6 +33,16 @@ public class PrincipalConListas {
             }
 
         }
+        System.out.println("**********************************************");
+        ArrayList<String> listaDeActores = new ArrayList<>();
+        listaDeActores.add("Penelope cruz");
+        listaDeActores.add("Antonio Banderas");
+        listaDeActores.add("Ricardo Darin");
+        System.out.println("no ordenada" + listaDeActores);
+        System.out.println("***********************************************");
+        Collections.sort(listaDeActores);
+        System.out.println("lista de artistas ordenada " + listaDeActores);
+
 
     }
 }
