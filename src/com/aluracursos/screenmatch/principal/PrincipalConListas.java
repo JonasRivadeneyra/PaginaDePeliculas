@@ -6,6 +6,7 @@ import com.aluracursos.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 
 public class PrincipalConListas {
@@ -40,9 +41,14 @@ public class PrincipalConListas {
         listaDeActores.add("Ricardo Darin");
         System.out.println("no ordenada" + listaDeActores);
         System.out.println("***********************************************");
+
         Collections.sort(listaDeActores);
         System.out.println("lista de artistas ordenada " + listaDeActores);
 
+        Collections.sort(lista);
+        System.out.println("lista de titulos ordenada " + lista);
+        lista.sort(Comparator.comparing(Titulo::getFechaDeLanzamiento));
+        System.out.println("lista ordenada por fecha " +lista);
 
     }
 }
